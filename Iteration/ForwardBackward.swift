@@ -3,16 +3,20 @@
 
 
 
-func forwardBackward<Iter : IteratorProtocol>(input: Iter) -> ([Iter.Element], [Iter.Element])  {
-    var newArray: [Iter.Element] = []
+func forwardBackward<Iter : IteratorProtocol>(input: Iter) -> [(Iter.Element, Iter.Element)]  {
     var mutableInput = input
+    var newArray:[Iter.Element] = []
     
     while let item = mutableInput.next() {
         newArray.append(item)
-        let together = Array(zip(newArray,newArray.reversed()))
     }
-    return together
+    let zipped = Array(zip(newArray,newArray.reversed()))
+    return zipped
 }
+
+
+
+
 
 
 

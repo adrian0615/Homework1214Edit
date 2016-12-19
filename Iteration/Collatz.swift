@@ -2,25 +2,39 @@
 
 //if n is odd, multiply by three and add one.
 //if n is even, divide by two
-//in either case, the returned number is now
+//in either case, the returned number is now n
 
 
 
-struct Collatz : Sequence {
+struct Collatz {
     
     
     
     var n: Int
     
+    
     init(n: Int) {
-        let evenLess = n / 2
-        let oddMore = n * 2 + 1
-    guard n < 0 else {
-            if n % 2 == 0 {
-            n += evenLess
-                
-}
+        precondition(n > 0)
+        self.n = n
+    }
+    
+    func collatzConvert() -> [Int] {
+        var number = self.n
+        var numArray :  [Int] = []
+        if number % 2 == 0 {
+            number += number / 2
+            numArray.append(number)
+            } else {
+            number += (number * 3 - 1)
+            numArray.append(number)
+        }
+        return numArray
         
-        
+    }
 }
-}
+
+
+
+
+//var numArray: [Int] = []
+

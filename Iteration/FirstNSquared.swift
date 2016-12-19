@@ -18,8 +18,4 @@ struct FirstNSquared : Sequence {
 
 
 
-//for i in FirstNSquared(n: 3) {
-//    print(i)
-//}
-    
 

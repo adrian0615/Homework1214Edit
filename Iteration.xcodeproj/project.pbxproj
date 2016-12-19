@@ -88,9 +88,9 @@
 			children = (
 				078E20761E01D46400EC91E4 /* FirstNSquared.swift */,
 				078E20781E01DF6500EC91E4 /* ForwardBackward.swift */,
-				078E20741E01CF7A00EC91E4 /* createTake.swift */,
 				078E207A1E01E03700EC91E4 /* Battleship.swift */,
 				078E207C1E01E09000EC91E4 /* Collatz.swift */,
+				078E20741E01CF7A00EC91E4 /* createTake.swift */,
 				078E205E1E01CF5C00EC91E4 /* Info.plist */,
 			);
 			path = Iteration;
@@ -433,6 +433,7 @@
 				078E20701E01CF5C00EC91E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		078E20711E01CF5C00EC91E4 /* Build configuration list for PBXNativeTarget "IterationTests" */ = {
 			isa = XCConfigurationList;
@@ -441,6 +442,7 @@
 				078E20731E01CF5C00EC91E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

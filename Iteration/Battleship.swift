@@ -5,9 +5,23 @@
 
 
 
-struct Battleship<[] {
+struct Battleship {
     
     
+    let characterArray: [Character]
+    let numArray: [Int]
+    
+    func newArray(charInput: [Character], numInput: [Int]) -> [(Character,Int)] {
+        var output: [(Character,Int)] = []
+        var zippedArray = zip(charInput, numInput).makeIterator()
+        while let i = zippedArray.next(){
+            output.append(i)
+        }
+        return output
+    }
     
 }
+
+
+var battle = Battleship(characterArray: ["a", "b", "c"], numArray: [1, 2])
 
